@@ -6,17 +6,16 @@ my_turtle = turtle.Turtle()
 #my_turtle.right(90)    #test
 #my_turtle.forward(100) #test
 
-def square(lenght,angle):
+def square(size):
     
     for i in range(0,4):
-        my_turtle.forward(lenght)
-        my_turtle.right(angle)
+        my_turtle.forward(size)
+        my_turtle.right(90)
 
-def circle(lenght,angle):
+def circle(size):
     for n in range(0,100):
-        square(lenght,angle)
+        square(size)
         my_turtle.right(10)
         
 
-circle(100,90)
-
+circle(100)
